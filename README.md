@@ -17,7 +17,6 @@ docker push thanishma/restaurants-app
 
 Also, deployed on kubernetes 
 
-
 commands used for deploying on kubernetes -
 
 minikube start
