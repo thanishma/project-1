@@ -12,6 +12,8 @@ docker run -p 8000:8000 thanishma/restaurants-app
 
 docker push thanishma/restaurants-app
 
+![image](https://github.com/thanishma/project-1/assets/73327713/c3b8af30-af4c-4104-b382-8ff9d4e08d65)
+
 
 Also, deployed on kubernetes 
 
