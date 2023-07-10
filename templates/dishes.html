@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dishes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4caf50;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        a {
+            color: #4caf50;
+            text-decoration: none;
+        }
+
+        .total-bill {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dishes</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Actions</th>
+        </tr>
+        {% for menu_item in menu_items %}
+        <tr>
+            <td>{{ menu_item.name }}</td>
+            <td>{{ menu_item.category }}</td>
+            <td>{{ menu_item.price }}</td>
+            <td><a href="{{ url_for('delete_menu_item', index=loop.index0) }}">Delete</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    <div class="total-bill">
+        <h2>Total Bill: Rs. {{ total_bill }}</h2>
+    </div>
+</body>
+</html>

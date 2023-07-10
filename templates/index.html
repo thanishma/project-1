@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .messages {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #e6e6e6;
+            border-radius: 5px;
+        }
+
+        .messages li {
+            margin-bottom: 5px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .button-container button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Restaurant Menu</h1>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+
+    <div class="button-container">
+        <form method="POST" action="{{ url_for('add_menu_item') }}">
+            <button type="submit">Add Dish</button>
+        </form>
+
+        {% if menu_items %}
+        <form method="GET" action="{{ url_for('add_another_dish') }}">
+            <button type="submit">Add Another Dish</button>
+        </form>
+        {% endif %}
+
+        <form method="GET" action="{{ url_for('display_dishes') }}">
+            <button type="submit">Display Dishes</button>
+        </form>
+    </div>
+</body>
+</html>
+
