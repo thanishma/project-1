@@ -38,4 +38,5 @@ minikube service <service_name> --> you will get the webpage
 
 ![image](https://github.com/thanishma/project-1/assets/73327713/7a311721-e459-4f08-9d40-416e6b0e5a74)
 
+![image](https://github.com/thanishma/project-1/assets/73327713/d640749a-afbf-4040-98a6-8e823497ca66)
 
