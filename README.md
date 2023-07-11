@@ -31,3 +31,11 @@ kubectl get services
 
 minikube service <service_name> --> you will get the webpage
 
+![image](https://github.com/thanishma/project-1/assets/73327713/163df788-709e-4fb7-af00-c82288fae59a)
+
+
+![image](https://github.com/thanishma/project-1/assets/73327713/bba86086-734a-40ef-85c9-475fd788672d)
+
+![image](https://github.com/thanishma/project-1/assets/73327713/7a311721-e459-4f08-9d40-416e6b0e5a74)
+
+
