@@ -40,9 +40,10 @@ minikube service <service_name> --> you will get the webpage
 
 ![image](https://github.com/thanishma/project-1/assets/73327713/c24ee440-45a1-4f1f-b881-ac098a0933f9)
 
-Deploying application using ELK-STACK via kubernetes
+Deploying application using ELK-STACK via kubernetes-
 
 Commands used- 
+
 kubectl apply -f elk-stack.yml -n elk-stack
 
 kubectl apply -f restaurant-mgmt.yml -n elk-stack
