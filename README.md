@@ -58,7 +58,7 @@ minikube service restaurant-mgmt -n elk-stack
 
 ![image](https://github.com/thanishma/project-1/assets/73327713/a4bb5f24-1e89-4add-b52c-dcf329446208)
 
-minikube service kibana -n elk-stack --> for getting the kibana 
+minikube service kibana -n elk-stack --> for getting the kibana dashboard
 
 ![image](https://github.com/thanishma/project-1/assets/73327713/eba1ee43-3b61-4e4a-9196-9d4713877cb9)
 
