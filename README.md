@@ -44,8 +44,11 @@ Deploying application using ELK-STACK via kubernetes
 
 Commands used- 
 kubectl apply -f elk-stack.yml -n elk-stack
+
 kubectl apply -f restaurant-mgmt.yml -n elk-stack
+
 Kubectl get services/pods/deployments -n elk-stack -->to get the objects
+
 minikube service restaurant-mgmt -n elk-stack
 
 ![image](https://github.com/thanishma/project-1/assets/73327713/36d478bd-d98f-4a6e-814e-68fb7c01acd9)
